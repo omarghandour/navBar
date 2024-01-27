@@ -1,0 +1,72 @@
+.app {
+  height: 100svh;
+  background-image: url("./assets/bg.jpeg");
+  color: white;
+}
+.container {
+  padding: 40px;
+}
+nav {
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 80%);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 35%;
+}
+.links {
+  display: flex;
+  background-color: black;
+  border-radius: 7px;
+}
+.links a {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 17px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.links a:hover {
+  border: 1px solid white;
+}
+.logo img {
+  width: 55px;
+  transition: 0.5s;
+}
+.logo img:hover {
+  rotate: calc(365deg);
+}
+.dropdown {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  width: 10%;
+  display: flex;
+  right: 15%;
+  flex-direction: column;
+  background-color: black;
+  padding: 22.5px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.dropdown:hover {
+  border: 2px solid white;
+}
+/* screens */
+@media (max-width: 767px) {
+  .dropdown {
+    width: 25% !important;
+  }
+}
+@media (max-width: 1080px) {
+  .links {
+    display: none;
+  }
+  .dropdown {
+    width: 15%;
+  }
+}
